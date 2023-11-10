@@ -1,0 +1,7 @@
+package tech-harmless:tcomp@0.0.1;
+
+world testing {
+    import hello: func() -> u32;
+    export h-world: func() -> string;
+    export data-process: func(data: list<u32>) -> option<list<u32>>;
+}
