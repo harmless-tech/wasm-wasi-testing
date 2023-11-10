@@ -5,3 +5,11 @@ world testing {
     export h-world: func() -> string;
     export data-process: func(data: list<u32>) -> option<list<u32>>;
 }
+
+world t2 {
+    record abc {
+        a: u32,
+        b: u64,
+        c: string,
+    }
+}

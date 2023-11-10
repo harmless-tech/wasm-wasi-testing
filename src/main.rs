@@ -5,7 +5,8 @@ use wasmtime_wasi::preview2::{WasiView, Table, WasiCtx, WasiCtxBuilder};
 
 bindgen!({
     path: "./wit/tcomp.wit",
-    async: true
+    world: "testing",
+    async: true,
 });
 
 struct Link {
