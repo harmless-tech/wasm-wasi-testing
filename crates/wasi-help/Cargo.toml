@@ -1,13 +1,8 @@
 [package]
-name = "wasmmm"
+name = "wasi-help"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[lib]
-crate-type = ["cdylib"]
-
 [dependencies]
-wit-bindgen = "=0.14.0"
-wasi-help = { version = "0.1.0", path = "../wasi-help" }

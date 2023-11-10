@@ -1478,6 +1478,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "wasi-help"
+version = "0.1.0"
+
+[[package]]
 name = "wasi-test"
 version = "0.1.0"
 dependencies = [
@@ -1524,6 +1528,7 @@ dependencies = [
 name = "wasmmm"
 version = "0.1.0"
 dependencies = [
+ "wasi-help",
  "wit-bindgen",
 ]
 

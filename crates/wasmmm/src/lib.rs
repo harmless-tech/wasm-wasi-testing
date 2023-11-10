@@ -1,3 +1,5 @@
+use wasi_help::{u32_to_i32, i32_to_u32};
+
 wit_bindgen::generate!({
     world: "testing",
     exports: {
@@ -16,9 +18,9 @@ impl Guest for GG {
     fn data_process(mut data: Vec<u32>) -> Option<Vec<u32>> {
         if data.len() > 3 {
             for i in data.iter_mut() {
-                let mut a: i32 = unsafe { std::mem::transmute(i.clone()) };
+                let mut a: i32 = u32_to_i32(*i);
                 a -= 2;
-                *i = unsafe { std::mem::transmute(a) };
+                *i = i32_to_u32(a);
             }
             return Some(data);
         }

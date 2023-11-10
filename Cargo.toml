@@ -11,4 +11,7 @@ wasmtime = { version = "=14.0.4", features = ["component-model"] }
 wasmtime-wasi = "=14.0.4"
 
 [workspace]
-members = ["crates/wasmmm"]
+members = [
+    "crates/wasi-help",
+    "crates/wasmmm",
+]
